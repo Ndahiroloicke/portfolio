@@ -9,7 +9,7 @@ const Home = () => {
                 <div>
                     <div>
                         <div className='text-7xl w-[420px]'>
-                            MY NAME IS <span className='font-bold'>LOIC NDAHIRO...</span>
+                            MY NAME IS <span className='font-bold'>LOIC NDAHIRO..</span>
                         </div>
                         <div className='text-2xl'><span className='font-bold italic'>Full-Stack Engineer</span> Based in Rwanda</div>
                         <div>
