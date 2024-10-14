@@ -18,7 +18,7 @@ export default function Navbar() {
             >
               Loic
             </header>
-            <nav className="space-y-4">
+            <nav className="space-y-6">
               <li className="list-none">HOME</li>
               <li className="list-none">ABOUT</li>
               <li className="list-none">SERVICES</li>

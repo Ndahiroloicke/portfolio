@@ -4,15 +4,15 @@ import imagepath from '@/assets/porfolio-removebg-preview.png'
 
 const Home = () => {
     return (
-        <div className='flex justify-center items-center align-middle' style={{fontFamily:"'IBM Plex Sans', sans-serif"}}>
+        <div className='flex-1 justify-center' style={{fontFamily:"'IBM Plex Sans', sans-serif"}}>
             <div className='flex flex-row'>
                 <div>
                     <div>
                         <div className='text-7xl w-[420px]'>
                             MY NAME IS <span className='font-bold'>LOIC NDAHIRO..</span>
                         </div>
-                        <div className='text-2xl'><span className='font-bold italic'>Full-Stack Engineer</span> Based in Rwanda</div>
-                        <div>
+                        <div className='text-xl mt-6'><span className='font-bold italic'>Full-Stack Engineer</span> Based in Rwanda</div>
+                        <div className='mt-12 mb-16'>
                             <button className='bg-[#141313] text-white py-4 px-10 flex items-center'>Let's talk with me </button>
                         </div>
                     </div>
@@ -31,8 +31,14 @@ const Home = () => {
                     <Image 
                         src={imagepath} 
                         alt="Portfolio" 
-                        className='size-44' 
+                        className='size-60' 
                     />
+                </div>
+                <div>
+                <i className='bx bxl-github text-3xl border-2' ></i>
+                <i className='bx bxl-upwork text-3xl border-2'></i>
+                <i className='bx bxl-linkedin-square text-3xl border-2 rounded-full' ></i>
+                <div className='bg-[#141313] w-[0.5px] h-36'></div>
                 </div>
             </div>
         </div>
