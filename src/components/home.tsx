@@ -4,7 +4,7 @@ import imagepath from '@/assets/porfolio-removebg-preview.png'
 
 const Home = () => {
     return (
-        <div className='flex-1 justify-center' style={{fontFamily:"'IBM Plex Sans', sans-serif"}}>
+        <div className='flex-1 ml-36 justify-center w-fit' style={{fontFamily:"'IBM Plex Sans', sans-serif"}}>
             <div className='flex flex-row'>
                 <div>
                     <div>
@@ -27,11 +27,11 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className='mt-8'>
                     <Image 
                         src={imagepath} 
                         alt="Portfolio" 
-                        className='size-60' 
+                        className='size-96' 
                     />
                 </div>
             </div>
