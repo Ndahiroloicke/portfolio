@@ -1,7 +1,12 @@
+import Navbar from "@/components/navbar";
+
 export default function Page () {
     return(
         <>
-        <div>this is the about us page</div>
+            <div className="flex flex-row">
+                <Navbar/>
+                <div>This is about us</div>
+            </div>
         </>
     )
 }

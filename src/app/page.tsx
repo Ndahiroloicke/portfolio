@@ -8,7 +8,7 @@ export default function Page() {
     <head>
       <title>Home </title>
     </head>
-      <div className="flex flex-row items-center pr-3">
+      <div className="flex flex-row justify-between items-center pr-3">
         <Navbar/>
         <Home/>
         <LastICon/>
