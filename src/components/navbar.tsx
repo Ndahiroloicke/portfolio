@@ -14,12 +14,12 @@ export default function Navbar() {
         />
       </head>
       <div
-        className="bg-[#141313] h-full sm:h-screen flex flex-col py-4 sm:py-10 justify-between text-sm overflow-y-hidden text-white w-fit p-4"
+        className="bg-[#141313] pr-8 pl-5 sm:h-screen flex flex-col py-4 sm:py-10 justify-between text-sm overflow-y-hidden text-white sm:w-fit"
         style={{ fontFamily: "'IBM Plex Sans', sans-serif" }}
       >
         <div className="space-y-20">
           <header
-            className="sm:text-[30px] text-[20px] font-semibold  md:block"
+            className="sm:text-[30px] text-xs font-semibold  md:block"
             style={{ fontFamily: "'IBM Plex Serif', serif" }}
           >
             Loic
