@@ -1,3 +1,4 @@
+import About from "@/components/about";
 import Navbar from "@/components/navbar";
 
 export default function Page () {
@@ -5,7 +6,7 @@ export default function Page () {
         <>
             <div className="flex flex-row">
                 <Navbar/>
-                <div>This is about us</div>
+                <About/>
             </div>
         </>
     )
