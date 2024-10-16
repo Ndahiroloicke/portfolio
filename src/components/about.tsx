@@ -13,14 +13,17 @@ const About = () => {
           <p className="font-semibold text-[18px] italic">Nice to meet you!</p>
           <p className="font-bold text-4xl sm:text-5xl">Welcome to...</p>
           <div className="flex flex-col items-center lg:items-start">
-            <Image src={profile} alt="Profile Image" className="w-48 h-48 sm:w-64 sm:h-64" />
+            <Image src={profile} alt="Profile Image" className="w-48 h-48 sm:w-96 sm:h-96" />
             <p className="font-bold text-4xl sm:text-5xl">Ndahiro Loic</p>
             <p className="text-xl mt-3">
               <span className="font-bold italic">Fullstack Developer</span> based in{" "}
               <span className="font-bold italic">Rwanda</span>
             </p>
             <div className="flex flex-row mt-8 hover:cursor-pointer items-center space-x-2">
-              <p className="underline">DOWNLOAD CV</p>
+              {/* Link to download the CV */}
+              <a href="/cv.pdf" download className="underline">
+                DOWNLOAD CV
+              </a>
               <Image src={download} alt="Download" />
             </div>
           </div>
