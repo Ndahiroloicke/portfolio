@@ -71,7 +71,7 @@ const About = () => {
                 </div>
                 <div className="w-auto sm:w-[315px]">
                   <p>
-                    Hello there! My name is Jacob Jones. I am a web designer &
+                    Hello there! My name is Ndahiro Loic. I am a web designer &
                     developer, and I'm very passionate and dedicated to my work.
                   </p>
                 </div>
