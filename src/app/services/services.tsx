@@ -1,12 +1,23 @@
+"use client"
 import Serve from "@/components/serv";
 import React from "react";
+import {motion} from 'framer-motion'
 
 const Services = () => {
   return (
-    <div>
-      <div>
-        <p>Services</p>
-        <h1>My SPECIALTIES</h1>
+    <motion.div
+    initial = {{opacity:0, y: 100}}
+    animate = {{
+        opacity: 1,
+        y: 0,
+        transition: {duration:0.5}
+    }}
+    className="mx-auto"
+    >
+    <div className="mx-auto" style={{ fontFamily: "'IBM Plex Sans', sans-serif" }}>
+      <div className="mb-[48px] mt-[60px]">
+        <p className="font-semibold italic text-[18px]">Services</p>
+        <h1 className="font-bold text-[48px]">My SPECIALTIES</h1>
       </div>
       <div className="space-y-[70px]">
         <Serve
@@ -31,6 +42,7 @@ const Services = () => {
         />
       </div>
     </div>
+    </motion.div>
   );
 };
 
