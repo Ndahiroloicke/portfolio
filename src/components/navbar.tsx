@@ -14,7 +14,7 @@ export default function Navbar() {
         />
       </head>
       <div
-        className="bg-[#141313] pr-8 pl-5 sm:h-screen flex flex-col py-4 sm:py-10 justify-between text-sm overflow-y-hidden text-white sm:w-fit"
+        className="bg-[#141313] pr-8 pl-5 md:h-screen flex flex-col py-4 sm:py-10 justify-between text-sm overflow-y-hidden text-white sm:w-fit"
         style={{ fontFamily: "'IBM Plex Sans', sans-serif" }}
       >
         <div className="space-y-20">
@@ -25,7 +25,6 @@ export default function Navbar() {
             Loic
           </header>
           <nav className="space-y-6 hover:cursor-pointer">
-            {/* Large screen (text links) */}
             <li
               onClick={() => setActiveItem('HOME')}
               className={`list-none transition-all duration-300 ease-in-out hidden md:block ${
