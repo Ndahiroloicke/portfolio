@@ -66,7 +66,7 @@ export default function Navbar() {
               CONTACT
             </li>
 
-            {/* Small screen (icons) */}
+            
             <li
               onClick={() => setActiveItem('HOME')}
               className={`list-none transition-all duration-300 ease-in-out md:hidden ${
