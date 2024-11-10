@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 export default function Navbar() {
-  // this is a comment
+
   const [activeItem, setActiveItem] = useState(''); // Store the clicked item's name
 
   return (
