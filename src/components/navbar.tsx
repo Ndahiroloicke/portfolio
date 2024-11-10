@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export default function Navbar() {
 
-  const [activeItem, setActiveItem] = useState(''); // Store the clicked item's name
+  const [activeItem, setActiveItem] = useState(''); 
 
   return (
     <>
