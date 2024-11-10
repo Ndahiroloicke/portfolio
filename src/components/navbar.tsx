@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 export default function Navbar() {
+  // this is a comment
   const [activeItem, setActiveItem] = useState(''); // Store the clicked item's name
 
   return (
@@ -65,8 +66,7 @@ export default function Navbar() {
             >
               CONTACT
             </li>
-
-            
+ 
             <li
               onClick={() => setActiveItem('HOME')}
               className={`list-none transition-all duration-300 ease-in-out md:hidden ${
