@@ -7,6 +7,7 @@ export default function Navbar() {
   const [activeItem, setActiveItem] = useState('');  // to store the clicked item
 
   return (
+    // this is another comment
     <>
       <head>
         <link
