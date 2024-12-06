@@ -1,10 +1,21 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { usePathname, useRouter } from 'next/navigation';
 
 export default function Navbar() {
+  const pathname = usePathname();
+  const router = useRouter();
+  const [activeItem, setActiveItem] = useState(pathname);
 
-  const [activeItem, setActiveItem] = useState('');  // to store the clicked item
+  useEffect(() => {
+    setActiveItem(pathname);
+  }, [pathname]);
+
+  const handleNavigation = (path: string) => {
+    setActiveItem(path);
+    router.push(path);
+  };
 
   return (
     <>
@@ -26,83 +37,78 @@ export default function Navbar() {
             Loic
           </header>
           <nav className="space-y-6 hover:cursor-pointer">
-            <li
-              onClick={() => setActiveItem('HOME')}
-              className={`list-none transition-all duration-300 ease-in-out hidden md:block ${
-                activeItem === 'HOME' ? 'font-bold text-2xl' : 'text-base'
-              }`}
-            >
-              HOME
+            <li className="list-none" onClick={() => handleNavigation('/')} onMouseEnter={() => setActiveItem('/')}>
+              <Link href="/" className={`list-none transition-all duration-300 ease-in-out hidden md:block ${
+                activeItem === '/' ? 'font-bold text-2xl' : 'text-base'
+              }`}>
+                HOME
+              </Link>
             </li>
-            <li
-              onClick={() => setActiveItem('ABOUT')}
-              className={`list-none transition-all duration-300 ease-in-out hidden md:block ${
-                activeItem === 'ABOUT' ? 'font-bold text-2xl' : 'text-base'
-              }`}
-            >
-              ABOUT
+            <li className="list-none" onClick={() => handleNavigation('/about')} onMouseEnter={() => setActiveItem('/about')}>
+              <Link href="/about" className={`list-none transition-all duration-300 ease-in-out hidden md:block ${
+                activeItem === '/about' ? 'font-bold text-2xl' : 'text-base'
+              }`}>
+                ABOUT
+              </Link>
             </li>
-            <li
-              onClick={() => setActiveItem('SERVICES')}
-              className={`list-none transition-all duration-300 ease-in-out hidden md:block ${
-                activeItem === 'SERVICES' ? 'font-bold text-2xl' : 'text-base'
-              }`}
-            >
-              SERVICES
+            <li className="list-none" onClick={() => handleNavigation('/services')} onMouseEnter={() => setActiveItem('/services')}>
+              <Link href="/services" className={`list-none transition-all duration-300 ease-in-out hidden md:block ${
+                activeItem === '/services' ? 'font-bold text-2xl' : 'text-base'
+              }`}>
+                SERVICES
+              </Link>
             </li>
-            <li
-              onClick={() => setActiveItem('PROJECTS')}
-              className={`list-none transition-all duration-300 ease-in-out hidden md:block ${
-                activeItem === 'PROJECTS' ? 'font-bold text-2xl' : 'text-base'
-              }`}
-            >
-              PROJECTS
+            <li className="list-none" onClick={() => handleNavigation('/projects')} onMouseEnter={() => setActiveItem('/projects')}>
+              <Link href="/projects" className={`list-none transition-all duration-300 ease-in-out hidden md:block ${
+                activeItem === '/projects' ? 'font-bold text-2xl' : 'text-base'
+              }`}>
+                PROJECTS
+              </Link>
             </li>
-            <li
-              onClick={() => setActiveItem('CONTACT')}
-              className={`list-none transition-all duration-300 ease-in-out hidden md:block ${
-                activeItem === 'CONTACT' ? 'font-bold text-2xl' : 'text-base'
-              }`}
-            >
-              CONTACT
+            <li className="list-none" onClick={() => handleNavigation('/contact')} onMouseEnter={() => setActiveItem('/contact')}>
+              <Link href="/contact" className={`list-none transition-all duration-300 ease-in-out hidden md:block ${
+                activeItem === '/contact' ? 'font-bold text-2xl' : 'text-base'
+              }`}>
+                CONTACT
+              </Link>
             </li>
  
             <li
-              onClick={() => setActiveItem('HOME')}
+              onClick={() => handleNavigation('/')}
               className={`list-none transition-all duration-300 ease-in-out md:hidden ${
-                activeItem === 'HOME' ? 'text-2xl' : 'text-base'
+                activeItem === '/' ? 'text-2xl' : 'text-base'
               }`}
             >
               <i className="bx bx-home text-2xl"></i>
             </li>
             <li
-              onClick={() => setActiveItem('ABOUT')}
+              onClick={() => handleNavigation('/about')}
               className={`list-none transition-all duration-300 ease-in-out md:hidden ${
-                activeItem === 'ABOUT' ? 'text-2xl' : 'text-base'
+                activeItem === '/about' ? 'text-2xl' : 'text-base'
               }`}
             >
               <i className="bx bx-user text-2xl"></i>
             </li>
             <li
-              onClick={() => setActiveItem('SERVICES')}
+              onClick={() => handleNavigation('/services')}
               className={`list-none transition-all duration-300 ease-in-out md:hidden ${
-                activeItem === 'SERVICES' ? 'text-2xl' : 'text-base'
+                activeItem === '/services' ? 'text-2xl' : 'text-base'
               }`}
             >
               <i className="bx bx-briefcase text-2xl"></i>
             </li>
             <li
-              onClick={() => setActiveItem('PROJECTS')}
+              onClick={() => handleNavigation('/projects')}
               className={`list-none transition-all duration-300 ease-in-out md:hidden ${
-                activeItem === 'PROJECTS' ? 'text-2xl' : 'text-base'
+                activeItem === '/projects' ? 'text-2xl' : 'text-base'
               }`}
             >
               <i className="bx bx-folder text-2xl"></i>
             </li>
             <li
-              onClick={() => setActiveItem('CONTACT')}
+              onClick={() => handleNavigation('/contact')}
               className={`list-none transition-all duration-300 ease-in-out md:hidden ${
-                activeItem === 'CONTACT' ? 'text-2xl' : 'text-base'
+                activeItem === '/contact' ? 'text-2xl' : 'text-base'
               }`}
             >
               <i className="bx bx-envelope text-2xl"></i>
