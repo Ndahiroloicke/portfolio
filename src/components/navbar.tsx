@@ -7,7 +7,7 @@ export default function Navbar() {
   const pathname = usePathname();
   const router = useRouter();
   const [activeItem, setActiveItem] = useState(pathname);
-
+ // Git push is very amazing
 
   useEffect(() => {
     setActiveItem(pathname);
