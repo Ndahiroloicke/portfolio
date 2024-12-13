@@ -9,31 +9,37 @@ const projectData = [
     title: "Nutritionist",
     description: "Front-end developer",
     imageSrc: nutritionist,
+    projlink: "https://nutritionist-web-app.vercel.app/"
   },
   {
     title: "Menya",
     description: "Mobile-App developer",
     imageSrc: menya,
+    projlink: "https://github.com/RISA-Project"
   },
   {
     title: "Soundbox",
     description: "Full-Stack developer",
     imageSrc: soundbox,
+    projlink: "https://github.com/Ndahiroloicke/soundbox2"
   },
   {
     title: "e-commerce",
     description: "Full-Stack developer",
     imageSrc: nutritionist,
+    projlink: "https://github.com/Ndahiroloicke/Fullstack_ecommerce-_website"
   },
   {
     title: "Etix",
     description: "Mobile-App developer",
     imageSrc: nutritionist,
+    projlink: "https://github.com/ETix-org"
   },
   {
     title: "Forti-core",
     description: "Front-end developer",
     imageSrc: nutritionist,
+    projlink: "https://github.com/"
   },
   
   
@@ -55,6 +61,7 @@ const Recent = () => {
               title={project.title}
               description={project.description}
               imageSrc={project.imageSrc}
+              projlink={project.projlink}
             />
           ))}
         </div>
