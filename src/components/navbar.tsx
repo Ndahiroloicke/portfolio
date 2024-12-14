@@ -7,7 +7,7 @@ export default function Navbar() {
   const pathname = usePathname();
   const router = useRouter();
   const [activeItem, setActiveItem] = useState(pathname);
-  // we are working on the design 
+  // Aioooo this is some crazy shit
 
   useEffect(() => {
     setActiveItem(pathname);
