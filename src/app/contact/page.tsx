@@ -3,7 +3,7 @@ import Contacts from "./contacts";
 
 export default function Page(){
     return(
-        <div className="flex flex-row">
+        <div className="flex flex-row mx-auto">
             <Navbar/>
             <Contacts/>
         </div>

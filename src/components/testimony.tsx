@@ -6,7 +6,7 @@ import lanez from "../assets/lanez.jpg"
 
 const Testimony = () => {
   return (
-    <div className='h-fit py-20 align-middle w-full text-white bg-black'>
+    <div className='h-fit py-20 align-middle w-full text-white bg-[#141313]'>
         <div className='w-fit align-middle mx-auto'>
             <div className='mb-20 flex flex-col items-center'>
                 <h1 className='font-semibold italic'>Testimonials</h1>
@@ -14,7 +14,7 @@ const Testimony = () => {
             </div>
             <div className='flex flex-row items-end'> 
                 <div>
-                <Image src={lanez} alt='lanez' className='w-80 h-96 rounded-t-full'/>
+                <Image src={lanez} alt='lanez' className='w-96 h-96 rounded-t-full'/>
                 </div>
                 <div className='w-96 py-4 pl-10'>
                     <p className='font-semibold text-xl italic'>“ File storage made easy – including powerful features you won’t find anywhere else. Whether you’re.”</p>
