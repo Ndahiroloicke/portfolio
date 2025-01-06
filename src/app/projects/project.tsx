@@ -19,7 +19,14 @@ const Project: React.FC<ProjectProps> = ({ title, description, imageSrc, projlin
         <Link href={projlink}><i className="bx bxs-right-top-arrow-circle text-6xl"></i></Link>
       </div>
       <div>
-        <Image src={imageSrc} alt={`${title} Picture`}  className='h-[109px] w-[253px]'/>
+      <Image 
+  src={imageSrc} 
+  alt={`${title} Picture`} 
+  className={`${
+    title === 'Etix' ? 'h-[130px] w-[253px]' : 'h-[140px] w-[253px]'
+  }`} 
+/>
+
       </div>
     </div>
   )

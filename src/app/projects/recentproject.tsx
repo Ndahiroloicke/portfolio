@@ -1,8 +1,11 @@
 import React from "react";
 import Project from "./project";
-import nutritionist from "../../assets/Nut.png";
+import nutritionist from "../../assets/nutri.png";
+import krist from "../../assets/krist.png"
+import etix from "../../assets/Etix.png"
 import soundbox from "../../assets/soundbox.jpg";
-import menya from "../../assets/Menya.png"
+import menya from "../../assets/menyap.png"
+import forticore from "../../assets/forticore.png"
 
 const projectData = [
   {
@@ -26,19 +29,19 @@ const projectData = [
   {
     title: "e-commerce",
     description: "Full-Stack developer",
-    imageSrc: nutritionist,
+    imageSrc: krist,
     projlink: "https://github.com/Ndahiroloicke/Fullstack_ecommerce-_website"
   },
   {
     title: "Etix",
     description: "Mobile-App developer",
-    imageSrc: nutritionist,
+    imageSrc: etix,
     projlink: "https://github.com/ETix-org"
   },
   {
     title: "Forti-core",
     description: "Front-end developer",
-    imageSrc: nutritionist,
+    imageSrc: forticore,
     projlink: "https://github.com/"
   },
   
@@ -64,6 +67,10 @@ const Recent = () => {
               projlink={project.projlink}
             />
           ))}
+        </div>
+        <div className="flex items-center mx-auto my-24 gap-x-2 bg-black text-white px-2 py-3 w-fit rounded-2xl posi">
+          <button className="font-bold">Load more</button>
+          <i className="bx bxs-right-top-arrow-circle text-2xl"></i>
         </div>
       </div>
     </div>
