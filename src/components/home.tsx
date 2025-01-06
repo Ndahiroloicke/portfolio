@@ -35,7 +35,7 @@ const Home = () => {
                     <Image 
                         src={imagepath} 
                         alt="Portfolio" 
-                        className='w-48 h-48 md:w-auto md:h-auto' 
+                        className='w-48 h-48 md:w-auto md:h-auto'
                     />
                 </div>
             </div>

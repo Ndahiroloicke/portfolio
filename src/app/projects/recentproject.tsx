@@ -6,6 +6,7 @@ import etix from "../../assets/Etix.png"
 import soundbox from "../../assets/soundbox.jpg";
 import menya from "../../assets/menyap.png"
 import forticore from "../../assets/forticore.png"
+import Testimony from "@/components/testimony";
 
 const projectData = [
   {
@@ -72,6 +73,7 @@ const Recent = () => {
           <button className="font-bold">Load more</button>
           <i className="bx bxs-right-top-arrow-circle text-2xl"></i>
         </div>
+        <div><Testimony/></div>
       </div>
     </div>
   );
